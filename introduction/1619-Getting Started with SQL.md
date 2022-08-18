@@ -15,7 +15,7 @@ Once installed, you can open DB Browser using the shortcuts created. If you did 
 
 This is what you will see the first time you launch DB Browser for SQLite:
 
-![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_a3c8bd7778a844029346ececd43d3f00.png)
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_89577b353eb648f5b47cb15ea6962179.png)
 
 Before we can get started with writing SQL queries, we need to create or open a database so that we can run the queries on the data in that database. For this purpose, we have uploaded a sample database of a popular 'beginner' database for SQL - the Northwind Database. You can download the file from [here](https://github.com/dphi-tech/Datasets/blob/master/Northwind.db).
 
@@ -27,7 +27,7 @@ Secondly, you can directly go to the downloaded file and choose to open it using
 
 Once you open the .db file in DB Browser successfully, you should see something like this:
 
-![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_f9f10c40061e4f0c9b52799f5c1d5121.png)
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_b608874f88bf41258aac5e699471b983.png)
 
 This tab gives you an overall structure of the database, which includes the tables in the database, the queries that were used to create the structure of that table, and if you click the arrow on the left of a table name, it will further show you the columns in that table and its characteristics/properties. Don't worry if you don't understand these yet, we'll look at them one by one.
 
