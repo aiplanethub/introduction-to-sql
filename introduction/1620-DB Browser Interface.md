@@ -12,7 +12,7 @@ As you may recall from the previous topic, once we load a database into DB Brows
 
 
 
-Here, each entry in the 'Tables' category is a table in the database, and each entry within a table is a column. So, for example, the Northwind Database has a table called 'Customers', and this table has seven columns, 'CustomerID', 'CustomerName','ContactName', etc. 
+Here, each entry in the 'Tables' category is a table in the database, and each entry within a table is a column. So, for example, the Northwind Database has a table called 'Customers', and this table has seven columns, 'CustomerID', 'CustomerName', 'ContactName', etc. 
 
 
 
