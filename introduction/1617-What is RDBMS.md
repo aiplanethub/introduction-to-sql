@@ -13,6 +13,14 @@ Now, the characteristics of each student comprise the 'fields' or columns of eac
 
 This structure of related tables put together under a single collection is called a database. Often, since the data contained in the tables are related to each other, we end up identifying relations between the tables, and this is why such a database is called a 'relational' database. 
 
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_486d8e95cffd4b0597eeafccaff6c9b1.png)
+
+
+
+
 ## Relational DataBase Management System (RDBMS)
 
 A software that allows us to store, clean, analyze, manipulate, maintain and delete data from a Relational Database is called a Relational DataBase Management System, or RDBMS. 
@@ -24,3 +32,7 @@ An RDBMS serves many functions. Some of these include:
 * Provide administrative functions for managing access and performance
 
 SQL is one such tool. Many other tools can also help us achieve the basic functionality that SQL offers, but SQL is the most popular due to how flexible and powerful it is, and at the same time, its syntax is fairly intuitive, making it easy to learn. We will learn more about SQL in the next topic.
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_7dc04843cb8f4d69942fb9dcfa3a8781.png)
