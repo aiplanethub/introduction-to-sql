@@ -11,12 +11,11 @@ DB Browser can be downloaded for various operating systems from their official w
 Once downloaded, just follow the instructions to finish installing it on your system. For the Windows installer, you can select where you want to place shortcuts. Leave the other options as-is. We will use the DB Browser(SQLite) application, not the DB Browser(SQLCipher) application. 
 
 ## DB Browser Interface
-
 Once installed, you can open DB Browser using the shortcuts created. If you did not create any shortcuts, you can go to the directory where you installed the software (on Windows, this is the Program Files or Program Files(x86) Folder in your C: drive by default) and launch it from the DB Browser folder in that directory. 
 
 This is what you will see the first time you launch DB Browser for SQLite:
 
-![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_5bb04750f9df45a8b123592d1ccbce84.png)
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_a3c8bd7778a844029346ececd43d3f00.png)
 
 Before we can get started with writing SQL queries, we need to create or open a database so that we can run the queries on the data in that database. For this purpose, we have uploaded a sample database of a popular 'beginner' database for SQL - the Northwind Database. You can download the file from [here](https://github.com/dphi-tech/Datasets/blob/master/Northwind.db).
 
