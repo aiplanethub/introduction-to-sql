@@ -2,11 +2,24 @@
 
 As you may recall from the previous topic, once we load a database into DB Browser, the first page we will see looks something like this:
 
-![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_d0483f63858a44efb60e761281d27490.png)
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_b608874f88bf41258aac5e699471b983.png)
+
+
+
+
 
 Here, each entry in the 'Tables' category is a table in the database, and each entry within a table is a column. So, for example, the Northwind Database has a table called 'Customers', and this table has seven columns, 'CustomerID', 'CustomerName','ContactName', etc. 
 
-![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_b82c86bddadd4166b2ea849d6b3e3fd1.png)
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_5f45bbdba23b4b8693a46a320f89e718.png)
+
+
+
 
 The 'Type' column in the information shown tells us the data type of each column. This is something we must define while creating the table structure. If you look at the 'Schema' column, you will find the SQL query used to define each table's structure. Take a closer look at one of these queries, and you'll find that each Column name is immediately followed by its data type. 
 
@@ -68,7 +81,16 @@ The 'Browse Data' tab allows you to open up a specific table and glance over the
 
 
 
-![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_c7060825c1d24bfba3c567cfd7583bde.png)
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_407dc183e3a04663ba12b8a10c07458c.png)
+
+
+
+
+
 
 
 ## Execute SQL
@@ -81,7 +103,7 @@ Finally, this tab is where most of the action will happen throughout this course
 
 
 
-![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_62294bde00324c4fa0bf9154a48864e7.png)
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_348857eedc874258b28e5228d8c2dc18.png)
 
 
 
@@ -95,7 +117,11 @@ Further below, you will find two more windows - the second window is where you w
 
 
 
-![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_192d7d24401b4944b114a26972de213c.png)
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_1450be9be3e54c1e9d3791450be32352.png)
+
+
+
 
 
 
