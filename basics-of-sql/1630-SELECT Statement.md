@@ -33,7 +33,7 @@ Output:
 
 Notice here that the order of columns in the output is the same order we use in the query, not the order in which the columns occur in the original table. 
 
-Now, imagine we have a table with many columns. If we want to print the entire table as-is, it would be very time-consuming to list all the columns, separated by commas. For this purpose, SQL has a shortcut for selecting 'everything' from a table. This shortcut is the character '*'. When reading an SQL query, you can interpret a '*' as 'everything' or 'all'. Therefore, the query:
+Now, imagine we have a table with many columns. If we want to print the entire table as-is, it would be very time-consuming to list all the columns, separated by commas. For this purpose, SQL has a shortcut for selecting 'everything' from a table. This shortcut is the character '\*'. When reading an SQL query, you can interpret a '\*' as 'everything' or 'all'. Therefore, the query:
 
 `SELECT * from Customers`
 
