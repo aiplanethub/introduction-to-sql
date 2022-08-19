@@ -87,4 +87,5 @@ The SELECT DISTINCT statement lets us return unique values from a column:
 
 This will give us the list of unique countries in the Customers table:
 
+
 ![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_b964d0dcef7846719def0e4b15bc5dce.png)
