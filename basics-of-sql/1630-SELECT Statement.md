@@ -1,3 +1,9 @@
+## Semi-colons in SQL
+
+Before we get started with the SELECT statement, let us discuss semi-colons. In DB Browser, you do not need to put a semi-colon at the end of each SQL statement/query. However, putting a semi-colon at the end of each query may be compulsory in other software.
+
+Standard SQL does indeed require a semi-colon at the end of each query. However, this is usually compulsory when you want to run multiple queries in one go, something we will not be doing much in this course. Nonetheless, if you are facing errors with the queries we provide, this can be one of the possible reasons.
+
 ## What is the SELECT command?
 
 The SELECT command is one of the most used commands when it comes to data science. It is used to display a table partly, fully, or by first modifying data in a table using some logic and then displaying it. 
