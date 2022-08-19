@@ -37,7 +37,7 @@ Now, imagine we have a table with many columns. If we want to print the entire t
 
 `SELECT * from Customers`
 
-can be interpreted by us as "Select everything from Customers table", which is precisely what the query does:
+can be interpreted by us as "Select everything from Customers table," which is precisely what the query does:
 
 
 
