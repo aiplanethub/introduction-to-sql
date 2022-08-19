@@ -33,11 +33,17 @@ Output:
 
 Notice here that the order of columns in the output is the same order we use in the query, not the order in which the columns occur in the original table. 
 
-Now, imagine we have a table with many columns. It would be very time-consuming to list all the columns, separated by commas if we want to print the entire table as-is. For this purpose, SQL has a shortcut for selecting 'everything' from a table. This shortcut is the character '*'. When reading an SQL query, you can interpret a '*' as 'everything' or 'all'. Therefore, the query:
+Now, imagine we have a table with many columns. If we want to print the entire table as-is, it would be very time-consuming to list all the columns, separated by commas. For this purpose, SQL has a shortcut for selecting 'everything' from a table. This shortcut is the character '*'. When reading an SQL query, you can interpret a '*' as 'everything' or 'all'. Therefore, the query:
 
 `SELECT * from Customers`
 
-can be interpreted by us as "Select everything from Customers table", which is precisely what the query does. 
+can be interpreted by us as "Select everything from Customers table", which is precisely what the query does:
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_2d84f42512db499db1090d25f899b8bd.png)
+
+
 
 ### Concatenation
 
