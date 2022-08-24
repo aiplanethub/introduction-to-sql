@@ -10,13 +10,11 @@ Let's say we want to view the details of only those Customers that belong to the
 We can then easily write the SQL query for this:
 
 `SELECT * from Customers WHERE Country = 'USA'`
-
 **Note**: The rules for single vs. double quotes are a bit ambiguous in SQL and depend on which software you're using. Some allow you to use them interchangeably, while others are stricter. According to the standard, string literals should be enclosed in single quotes. This includes 'USA' and any other strings with pre-defined values (that is, they are not variables). On the other hand, variable names or aliases must be enclosed in double quotes IF they have a space in the name. SQLite does not enforce this rule, so we can use single and double quotes interchangeably. 
 
 Another example: say we want to view the Orders which were executed on 1996-08-01. We can again use the WHERE clause to do this:
 
 `SELECT * from Orders WHERE OrderDate = '1996-08-01'`
-
 Notice the quotes around the date in the above query. We have to do this because, in this database, the dates are stored as strings. 
 
 ## Operators in WHERE Clause
@@ -39,14 +37,12 @@ In string comparison, each letter of the strings is compared one by one. The let
 This operator also works well with dates. If we want to see details of Orders that occurred after, say, 1997-01-01, we can use this operator like this:
 
 `SELECT * from Orders WHERE OrderDate > '1997-01-01'`
-
 Note that the Orders that occurred ON 1997-01-01 are NOT included in the results, as we are looking for strictly larger dates only. 
 
 ### < operator
 Return True if the value on the left is smaller than the value on the right and False otherwise. It can be used in all the same ways as the < operator to check for strictly smaller values. For example, if we want to find the Order details for the orders that had a Quantity less than 5, we can find this information from the OrderDetails table using this query:
 
 `SELECT * from OrderDetails WHERE Quantity < 5`
-
 Again, note that Orders with Quantity = 5 are NOT included in the results. 
 
 ### >= operator
@@ -55,7 +51,6 @@ Returns True if the value on the left is greater than or equal to the value on t
 For example, let's say we want to see details of the products whose price is greater than or equal to 46. We can do so using this query:
 
 `SELECT * from Products WHERE Price >=46`
-
 Notice that the product with Price = 46 is also included in the resulting rows.
 
 ### <= operator
@@ -71,3 +66,12 @@ This can be useful if we want to exclude only one or two values from a Column wi
 `SELECT * from Customers WHERE Country != 'USA'`
 or
 `SELECT * from Customers WHERE Country <> 'USA'`
+The <> and != operators are equivalent and can be used interchangeably.
+
+### BETWEEN operator
+Returns True if the value lies within a specified range and False otherwise. Both edge values of the range are also included. 
+
+For example, say we want to view details of Orders that happened between 1996-12-25 and 1997-01-01. Instead of defining two conditions, one for each 'edge' value, we can use the BETWEEN operator to simplify the task:
+
+`SELECT * from Orders WHERE OrderDate BETWEEN '1996-12-25' AND '1997-01-01'`
+Note that Orders made ON 1996-12-25 and 1997-01-01 are included in the resulting rows.
