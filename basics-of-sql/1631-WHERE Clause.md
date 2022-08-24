@@ -26,4 +26,30 @@ We have a few operators that can be used in the WHERE clause to define different
 
 **Note**: SQLite supports both <> and != for the 'Not equal to' operation. 
 
-Let us look at each of these operators briefly. In all the explanations below,
+Let us look at each of these operators briefly. In all the explanations below, returning 'True' means that the row satisfies the condition and the query is performed on it, and returning 'False' means that the row does not satisfy the condition and is therefore excluded from the query execution. 
+
+### = operator
+Checks for equality of two values. Returns True if the two values are equal and False otherwise. We have already seen this operator in action in the introductory examples.
+
+### > operator
+Returns True if the value on the left is larger than the value on the right and False otherwise. This operator is generally used for numeric columns, but it can be used for string comparison as well. 
+
+In string comparison, each letter of the strings is compared one by one. The letter that comes later in alphabetical order has a higher value. If all the letters are the same until the end of one of the strings, the larger string is given a higher value. For example, 'USAmerica' > 'USA'. However, 'V' > 'USA' because V comes after U in the alphabet; therefore, the first letter itself is larger in the first string and the first string is considered 'larger'. 
+
+This operator also works well with dates. If we want to see details of Orders that occurred after, say, 1997-01-01, we can use this operator like this:
+
+`SELECT * from Orders WHERE OrderDate > '1997-01-01'`
+
+Note that the Orders that occurred ON 1997-01-01 are NOT included in the results, as we are looking for strictly larger dates only. 
+
+### < operator
+Return True if the value on the left is smaller than the value on the right and False otherwise. It can be used in all the same ways as the < operator to check for strictly smaller values. For example, if we want to find the Order details for the orders that had a Quantity less than 5, we can find this information from the OrderDetails table using this query:
+
+`SELECT * from OrderDetails WHERE Quantity < 5`
+
+Again, note that Orders with Quantity = 5 are NOT included in the results. 
+
+### >= operator
+Returns True if the value on the left is greater than or equal to the value on the left. It is similar to the > operator but allows you to include the 'edge' value in the returned results. 
+
+For example,
