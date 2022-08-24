@@ -52,4 +52,10 @@ Again, note that Orders with Quantity = 5 are NOT included in the results.
 ### >= operator
 Returns True if the value on the left is greater than or equal to the value on the left. It is similar to the > operator but allows you to include the 'edge' value in the returned results. 
 
-For example,
+For example, let's say we want to see details of the products whose price is greater than or equal to 46. We can do so using this query:
+
+`SELECT * from Products WHERE Price >=46`
+
+Notice that the product with Price = 46 is also included in the resulting rows.
+
+### <= operator
