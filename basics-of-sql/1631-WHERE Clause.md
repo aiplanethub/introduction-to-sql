@@ -50,7 +50,7 @@ Return True if the value on the left is smaller than the value on the right and 
 Again, note that Orders with Quantity = 5 are NOT included in the results. 
 
 ### >= operator
-Returns True if the value on the left is greater than or equal to the value on the left. It is similar to the > operator but allows you to include the 'edge' value in the returned results. 
+Returns True if the value on the left is greater than or equal to the value on the right. It is similar to the > operator but allows you to include the 'edge' value in the returned results. 
 
 For example, let's say we want to see details of the products whose price is greater than or equal to 46. We can do so using this query:
 
@@ -59,3 +59,15 @@ For example, let's say we want to see details of the products whose price is gre
 Notice that the product with Price = 46 is also included in the resulting rows.
 
 ### <= operator
+Return True if the value on the left is less than or equal to that on the right. Similar to the < operator but allows you to include the 'edge' value in the returned results. 
+
+Using the example in the >= operator section, try to design a query to display the details of Products with a Price less than or equal to 7. You should get a result with 4 rows, including a product with Price = 7.
+
+### <> or != operator
+Returns True if the value on the left and the one on the right are NOT equal and False if they are equal.
+
+This can be useful if we want to exclude only one or two values from a Column with many values. For example, say we want to see customer details of all customers except the ones in the USA. Instead of creating a long list of all the countries present in the database and excluding the USA from it, we can use the not equal operator:
+
+`SELECT * from Customers WHERE Country != 'USA'`
+or
+`SELECT * from Customers WHERE Country <> 'USA'`
