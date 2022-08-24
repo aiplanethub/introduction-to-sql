@@ -75,4 +75,6 @@ Returns True if the value lies within a specified range and False otherwise. Bot
 For example, say we want to view details of Orders that happened between 1996-12-25 and 1997-01-01. Instead of defining two conditions, one for each 'edge' value, we can use the BETWEEN operator to simplify the task:
 
 `SELECT * from Orders WHERE OrderDate BETWEEN '1996-12-25' AND '1997-01-01'`
-Note that Orders made ON 1996-12-25 and 1997-01-01 are included in the resulting rows.
+Note that Orders made ON 1996-12-25 and 1997-01-01 are included in the resulting rows. 
+
+### LIKE operator
