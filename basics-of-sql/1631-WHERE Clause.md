@@ -1,3 +1,4 @@
+## Use of WHERE Clause
 The WHERE clause filters out the rows that meet a specified condition or conditions and then performs the query on the extracted rows. For SELECT statements, the WHERE clause filters out the rows based on the specified conditions and only displays the rows that satisfy the condition. 
 
 WHERE clause can also be used in other queries, like UPDATE, which allows us to change existing values in a table. Using the WHERE clause in combination with UPDATE allows us to alter the values of only those rows which satisfy a condition. For this tutorial, we will focus on using the WHERE clause in SELECT statements, but the same logic also applies to other statements.
