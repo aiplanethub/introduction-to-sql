@@ -78,3 +78,23 @@ For example, say we want to view details of Orders that happened between 1996-12
 Note that Orders made ON 1996-12-25 and 1997-01-01 are included in the resulting rows. 
 
 ### LIKE operator
+This operator is used to search for patterns in a column. It makes use of two wildcard characters that let you define different kinds of patterns that you might want to look for in a column. These wildcards are:
+
+* % symbol - the % symbol represents zero, one, or more than one character.
+* _ symbol - the _ symbol represents a single character.
+
+Using these two wildcards, we can define different kinds of patterns that we might want to search for in a column using the WHERE clause. For example, let's say we want the details of only those Customers whose name starts with 'A'. We can do so using this query:
+
+`SELECT * from Customers WHERE CustomerName LIKE "A%"`
+Here, "A%" will return True for any string that starts with a capital A, followed by any number of characters.
+
+Let's take another example. Say we want to display the details of those Suppliers who have an 'o' at the second place in their name. It can be done like so:
+
+`SELECT * from Suppliers WHERE SupplierName LIKE "_o%"`
+
+### IN operator
+The IN operator is used to define a list of values that we would like to select and exclude everything not present in the list from the query. For example, say we only want details of Customers belonging to the USA and Canada. We can use the IN operator to do this:
+
+`SELECT * from Customers WHERE Country IN ("USA","Canada")`
+
+With these basic operators, we can define a variety of conditions for SELECT statements, as well as for other statements like UPDATE, DELETE, etc. Combining multiple conditions using operators like AND, OR, and NOT gives us even more flexibility on the conditions we can define, restricting the results of the query to get the desired outcome.
