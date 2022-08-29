@@ -5,7 +5,6 @@ Now, you might remember another keyword that seems to serve a similar purpose - 
 For example, consider the query we defined on the previous page to get the quantity of each product that was ordered:
 
 `SELECT SUM(Quantity) from OrderDetails GROUP BY ProductID`
-
 Now, let's say we want to fetch the quantity only in those cases where the total quantity ordered is more than 250. Let's try using the WHERE clause:
 
 ![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_15d79281991045dd8fb13c02cbbda056.png)
