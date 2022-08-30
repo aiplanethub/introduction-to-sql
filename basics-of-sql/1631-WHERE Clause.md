@@ -11,7 +11,7 @@ Let's say we want to view the details of only those Customers that belong to the
 We can then easily write the SQL query for this:
 
 `SELECT * from Customers WHERE Country = 'USA'`
-**Note**: The rules for single vs. double quotes are a bit ambiguous in SQL and depend on which software you're using. Some allow you to use them interchangeably, while others are stricter. According to the standard, string literals should be enclosed in single quotes. This includes 'USA' and any other strings with pre-defined values (that is, they are not variables). On the other hand, variable names or aliases must be enclosed in double quotes IF they have a space in the name. SQLite does not enforce this rule, so we can use single and double quotes interchangeably. 
+**Note**: The rules for single vs. double quotes are a bit ambiguous in SQL and depend on which software you're using. Some allow you to use them interchangeably, while others are stricter. According to the standard, string literals should be enclosed in single quotes. This includes 'USA' and any other strings with pre-defined values (that is, they are not variables). On the other hand, variable names or aliases must be enclosed in double quotes IF they have a space in the name.
 
 Another example: say we want to view the Orders which were executed on 1996-08-01. We can again use the WHERE clause to do this:
 
